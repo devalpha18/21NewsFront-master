@@ -1,0 +1,222 @@
+.container {
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  height: 120px;
+
+  .desktopMenu {
+    .headerContainer {
+      padding: 0 20px;
+      width: 100%;
+      height: 70px;
+      background: #021B9C;
+      display: flex;
+      justify-content: center;
+
+      .header {
+        width: 100%;
+        max-width: 1260px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+      }
+    }
+
+    .menuContainer {
+      padding: 0 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: #FFF;
+      box-shadow: 0 3px 15px #00000010;
+      position: relative;
+
+      .menubar {
+        width: 100%;
+        max-width: 1260px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        .toolbar {
+          height: 100%;
+          display: flex;
+          align-items: center;
+      
+          button {
+            padding: 0;
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin: 0 0 0 10px;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+
+  .mobileMenu {
+    display: none;
+
+    .headerContainer {
+      background: #FAFAFA;
+      height: 62px;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .searchField {
+        width: 235px;
+        height: 35px;
+        position: relative;
+        background: #FFF;
+        border-radius: 5px;
+        border: 1px solid #EAEAEA;
+
+        label {
+          position: absolute;
+          top: 0;
+          left: 14px;
+          height: 100%;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+        }
+
+        input {
+          width: 100%;
+          height: 100%;
+          background: none;
+          border: none;
+          font-size: 14px;
+          padding-left: 60px;
+          padding-right: 50px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        button {
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 100%;
+          border: none;
+          display: flex;
+          align-items: center;
+          padding: 10px;
+        }
+      }
+
+      & > button {
+        background: #021B9C;
+        border-radius: 5px;
+        color: #FFF;
+        width: 130px;
+        border: none;
+        height: 35px;
+        cursor: pointer;
+        font: {
+          size: 11px;
+          weight: 700;
+        }
+      }
+    }
+
+    .menuContainer {
+      height: 50px;
+      background: #021B9C;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      button {
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:last-child {
+        img {
+          filter: invert(1);
+        }
+      }
+
+      & > img {
+        width: 150px;
+      }
+    }
+  }
+
+  .mobileSlideMenu.open {
+    transform: translate(0, 0);
+  }
+
+  .mobileSlideMenu {
+    transform: translate(-100%, 0);
+    transition: 0.2s;
+    padding: 22px 20px;
+    background: #F3F3F3;
+    .links {
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+
+      a {
+        font-size: 18px!important;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888888;
+        border-top: 1px solid #E1E1E1;
+        padding: 30px 0 10px;
+
+        span {
+          font: {
+            size: 16px;
+            weight: 700;
+          }
+        }
+
+        div {
+          display: flex;
+          margin-left: 20px;
+
+          button {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            border: none;
+            background: none;
+            margin: 0 5px;
+          }
+        }
+      }
+  }
+}
+
+@media(max-width: 899px) {
+  .container {
+    height: 112px!important;
+    .desktopMenu {
+      display: none;      
+    }
+
+    .mobileMenu {
+      display: block;
+    }
+  }
+}

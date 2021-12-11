@@ -1,0 +1,59 @@
+.container {
+  margin-top: 15px;
+  width: 100%;
+  color: #333;
+}
+
+.userCard {
+  display: flex;
+}
+
+.userCard .avatar {
+  margin-right: 12px;
+}
+
+.container p {
+  margin: 0;
+}
+
+.userCard .name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.userCard .details > div {
+  font-size: 11px;
+  color: #848484;
+  display: flex;
+}
+
+.userCard .details img {
+  margin-right: 5px;
+}
+
+.userCard .details .review {
+  margin-right: 8px;
+}
+
+.addPhoto {
+  margin: 12px 0 9px;
+  font-size: 16px;
+}
+
+.reviewCard {
+  border: 1px solid #EAEAEA;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 14px;
+}
+
+.reviewCard .name { 
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.reviewCard img {
+  height: 100%;
+  margin-top: 7px;
+  border-radius: 5px;
+}

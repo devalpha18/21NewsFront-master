@@ -1,0 +1,43 @@
+.container {
+  padding: 9px 0 16px;
+  display: flex;
+  border-bottom: 1px solid #EAEAEA;
+}
+.real {
+  width: max-content;
+  margin: 0 auto;
+}
+.businessImg {
+  width: auto !important;
+}
+
+.noMarginRight {
+  margin-right: 0!important;
+}
+
+.container .avatar {
+  margin-right: 11px;
+}
+
+.container .avatar img {
+  width: 100%;
+}
+
+.content p {
+  margin: 0;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.content .title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.content .description, .content .tag {
+  font-size: 15px;
+  color: #848484;
+}

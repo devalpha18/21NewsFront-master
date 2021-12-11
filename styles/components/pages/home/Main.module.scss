@@ -1,0 +1,106 @@
+  .container {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #D0D0D0;
+    padding-bottom: 50px;
+  }
+
+  .container > div {
+    margin: 0 10px;
+  }
+
+  .container .left {
+    flex-basis: 75%;
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container .left .sectionOne {
+    margin: 0 -10px;
+    display: flex;
+  }
+
+  .container .left .sectionTwo {
+    margin: 0 -10px;
+    padding-right: 10px;
+  }
+
+  .container .left .slider {
+    padding-right: 10px;
+    width: 66.67%;
+    max-height: 390px!important;
+  }
+
+  .container .left .sectionOne {
+    margin-bottom: 40px;
+  }
+
+  .container .left .sectionTwo .body {
+    margin: 0 -10px;
+    display: flex;
+  }
+
+  .container .right {
+    max-width: 300px;
+    width: calc(25% - 30px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .right .link {
+    margin: 7px 0 20px;
+    font-size: 16px;
+  }
+
+  .container .right .tip-card-img {
+    width: 100%;
+  }
+
+@media(max-width: 899px) {
+    .hidden {
+      display: none!important;
+    }
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding-bottom: 30px;
+    }
+
+    .left {
+      max-width: 375px!important;
+      width: 100%!important;
+      margin: 0!important;
+    }
+
+    .slider {
+      width: 100vw!important;
+      max-width: 414px!important;
+      margin-bottom: 20px;
+      padding: 0!important;
+    }
+
+    .sectionOne, .sectionTwo {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 0!important;
+    }
+
+    .sectionTwo .body {
+      flex-direction: column;
+      align-items: center;
+      width: 100%!important;
+      margin: 0!important;
+    }
+
+    .right {
+      max-width: 375px!important;
+      width: 100%!important;
+      margin: 0!important;
+    }
+
+  }

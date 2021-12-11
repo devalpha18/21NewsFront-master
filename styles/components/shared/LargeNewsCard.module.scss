@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+  height: 100%;
+  
+  .avatar {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#00000000, #00000020, #000000);
+  }
+
+  .body {
+    position: absolute;
+    bottom: 0;
+    padding: 14px 16px;
+
+    .tag {
+      font: {
+        size: 10px;
+        weight: 600;
+      }
+      color: #021B9C;
+      background: #FFF;
+      border-radius: 3px;
+      padding: 1px 7px;
+      margin-bottom: 7px;
+    }
+
+    .title {
+      font: {
+        size: 23px;
+        weight: 700;
+      }
+      line-height: 28px;
+      color: #FFF;
+      margin: 0;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFF;
+      margin: 0;
+    }
+  }
+}

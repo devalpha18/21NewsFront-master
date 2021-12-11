@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body * {
+  font-family: 'Source Sans Pro', sans-serif!important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button:focus {
+  outline: none;
+}
+
+.dots {
+  display: flex!important;
+  position: absolute;
+  padding-left: 0;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 0;
+  z-index: 100;
+}
+
+.dots li {
+  transition: 0.3s;
+  list-style-type: none;
+  width: 40px;
+  height: 3px;
+  cursor: pointer;
+  background: #747474;
+}
+
+.dots li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.dots li.slick-active {
+  background: #FFF;
+}
+
+.slick-slider, .slick-list, .slick-track, .slick-slide, .slick-slide > div {
+  height: 100%;
+}
+
+.slick-arrow {
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+}
+
+.slick-next:before, .slick-prev:before {
+  content: ''!important;
+}

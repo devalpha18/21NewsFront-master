@@ -1,0 +1,111 @@
+.container {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background: #FFF;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.megaMenu {
+  padding: 45px 0 60px;
+  width: 100%;
+  max-width: 1260px;
+}
+
+.menus {
+  display: flex;
+  border-bottom: 1px solid #E1E1E1;
+  padding: 40px 0 35px;
+}
+
+.menus > div {
+  width: 50%;
+}
+
+.menus .links .item p {
+  margin: 0;
+  margin-bottom: 6px;
+  font-size: 18px;
+  color: #666666;
+}
+
+.menus .links > div {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.menus .links .item {
+  width: 33.3333%;
+}
+
+.menus .links > div .item .title {
+  color: #000;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.menus .ads {
+  width: 50%;
+  padding: 17px 27px 19px;
+  background: #FAFAFA;
+}
+
+.menus .ads .titlebar {
+  width: 100%;
+  border-left: 4px solid #F80606;
+  padding-left: 14px;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.menus .ads .card {
+  position: relative
+}
+
+.menus .ads .card img {
+  width: 100%;
+}
+
+.menus .card .gradient {
+  background-image: linear-gradient(#00000000, #00000020, #000000);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.menus .ads .card .title {
+  position: absolute;
+  width: calc(100% - 44px);
+  color: #FFF;
+  font-size: 26px;
+  font-weight: 700;
+  left: 22px;
+  bottom: 10px;
+}
+
+.footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer span {
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #888888;
+}
+
+.footer .buttonGroup button {
+  padding: 0;
+  background: none;
+  border: 0;
+  margin-left: 10px;
+}

@@ -1,0 +1,39 @@
+.container {
+  background: #F1F1F1;
+  padding: 13px 20px;
+  margin-bottom: 20px;
+
+  & > .title {
+    border-left: 5px solid #F80606;
+    padding-left: 14px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .article {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 18px;
+    border-bottom: 1px solid #E1E1E1;
+
+    img {
+      margin-right: 14px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .description {
+      font-size: 15px;
+      color: #666666;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 2px solid #D0D0D0;
+  align-items: center;
+}
+
+.container img {
+  margin-left: 20px;
+}
+
+.container .title {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.container .description {
+  font-size: 18px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.m-1{
+  margin-left: 10px;
+}

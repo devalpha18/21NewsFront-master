@@ -1,0 +1,38 @@
+.container {
+  margin-bottom: 27px;
+  
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    border-left: 4px solid #021B9C;
+    padding-left: 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .group {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 24px;
+  }
+}
+
+@media(max-width: 834px) {
+  .container {
+    .title {
+      margin-bottom: 31px!important;
+    }
+  }
+}
+
+@media(max-width: 414px) {
+  .container {
+    .title {
+      margin-bottom: 19px!important;
+      font-size: 17px!important;
+    }
+  }
+}

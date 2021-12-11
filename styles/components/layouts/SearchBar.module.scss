@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  height: 40px;
+  
+  .inputGroup {
+    height: 100%;
+    display: flex;
+    background: #FFF;
+    color: #000;
+    border-radius: 5px;
+
+    .textField {
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+
+      label {
+        padding: 0 10px;
+        font-size: 16px;
+        margin-bottom: 0;
+        line-height: 20px;
+      }
+
+      input {
+        height: 100%;
+        border: none;
+        background: none;
+        font-size: 16px;
+      }
+      
+      input:focus {
+        outline: none;
+      }
+    }
+
+    .borderRight {
+      border-right: 1px solid #EAEAEA;
+    }
+  }
+
+  button {
+    height: 100%;
+    background: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    font: {
+      size: 14px;
+      weight: 600;
+    }
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+
+@media(max-width: 1199px) {
+  .container {
+    button {
+      font-size: 12px;
+      margin-left: 5px;
+      padding: 0 5px;
+    }
+
+    input {
+      width: 120px;
+    }
+  }
+}

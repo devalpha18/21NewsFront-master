@@ -1,0 +1,113 @@
+.bodyContainer {
+  display: flex;
+  justify-content: center;
+  background: #FAFAFA;
+  padding: 120px 20px 82px;
+
+  .body {
+    width: 100%;
+    max-width: 1260px;
+
+    .main {
+      .header {
+        position: relative;
+        padding-top: 98px;
+
+        .map {
+          position: absolute;
+          top: -27px;
+          left: -200px;
+        }
+
+        .text {
+          p {
+            margin: 0;
+          }
+
+          display: flex;
+          .title {
+            width: 50%;
+            font-size: 36px;
+            line-height: 43px;
+            font-weight: 900;
+
+            span {
+              color: #021B9C;
+              cursor: pointer;
+            }
+          }
+  
+          .description {
+            width: 50%;
+            font-size: 18px;
+            line-height: 24px;
+            color: #666666; 
+          }
+        }
+
+        .searchBar {
+          display: flex;
+          justify-content: center;
+          padding: 66px 0 56px;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 414px) and (max-width: 834px) {
+  .bodyContainer {
+    padding: 112px 20px 0;
+
+    .map {
+      width: 100%;
+      left: 0!important;
+    }
+
+    .header {
+      padding-top: 49px!important;
+
+      .text {
+        .title {
+          font-size: 32px!important;
+          line-height: 40px!important;
+        }
+
+        .description {
+          font-size: 18px!important;
+          line-height: 24px!important;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 414px) {
+  .bodyContainer {
+    .header {
+      padding-top: 25px!important;
+      .map {
+        width: 100%;
+        top: 0!important;
+        left: 0!important;
+      }
+
+      .text {
+        flex-direction: column;
+
+        .title {
+          font-size: 23px!important;
+          line-height: 28px!important;
+          width: 100%!important;
+          margin-bottom: 24px!important;
+        }
+
+        .description {
+          width: 100%!important;
+          font-size: 15px!important;
+          line-height: 24px!important;
+        }
+      }
+    }
+  }
+}

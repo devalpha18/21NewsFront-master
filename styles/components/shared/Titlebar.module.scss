@@ -1,0 +1,74 @@
+.titlebar {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  min-height: 31px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 14px;
+  border-left: 3px solid #F80606;
+}
+
+.titlebar ul {
+  padding-left: 5px;
+  display: flex;
+  margin: 0;
+}
+
+.titlebar ul li {
+  list-style-type: none;
+  margin-left: 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.more {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.flex {
+  display: flex
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.wFull {
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+@media(max-width: 899px) {
+  .titlebar {
+    align-items: flex-start;
+  }
+  
+  .titlebar > div:first-child {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .titlebar ul {
+    padding-left: 0;
+    margin-top: 14px;
+  }
+
+  .titlebar ul li {
+    margin-left: 0;
+    margin-right: 18px;
+  }
+}

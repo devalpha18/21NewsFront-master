@@ -1,0 +1,39 @@
+.container {
+  width: 25%;
+  display: flex;
+  margin-bottom: 16px;
+  align-items: flex-start;
+
+  img {
+    margin-right: 15px;
+  }
+
+  span {
+    color: #666666;
+    font-size: 19px;
+    line-height: 23px ;
+  }
+}
+
+@media(max-width: 834px) {
+  .container {
+    width: 50%!important;
+    margin-bottom: 14px!important;
+
+    span {
+      font-size: 18px!important;
+    }
+  }
+}
+
+@media(max-width: 414px) {
+  .container {
+    width: 50%!important;
+    margin-bottom: 14px!important;
+
+    span {
+      font-size: 15px!important;
+      line-height: 19px!important;
+    }
+  }
+}

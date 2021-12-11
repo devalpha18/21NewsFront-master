@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  .img {
+    margin-right: 12px;
+  }
+
+  .title {
+    font-size: 10px;
+    line-height: 13px;
+    margin: 0;
+  }
+
+  .mail {
+    font: {
+      size: 24px;
+      weight: 600;
+    }
+    margin: 0;
+  }
+}

@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  margin: 0 -10px;
+  border-bottom: 1px solid #D0D0D0;
+  padding: 50px 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.container > div {
+  margin: 0 10px;
+}
+
+.container .left {
+  flex-basis: 75%;
+}
+
+.container .right {
+  max-width: 300px;
+  width: calc(100% - 30px);
+}
+
+.body {
+  height: calc(100% - 60px);
+  display: flex;
+  margin: 0 -10px;
+}
+.container .left .body .largeNewsCard {
+  margin: 0 10px;
+  margin-bottom: 10px;
+  width: 33.33%;
+}
+
+.container .left .body .smallNewsCards {
+  width: 66.67%;
+  margin: 0 10px;
+}
+
+.container .left .body .smallNewsCards > div{
+  margin: 0 -10px;
+}
+
+.right .link {
+  font-size: 16px;
+  margin: 0;
+  color: blue;
+  margin-top: 5px;
+}

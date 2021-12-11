@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  margin: 0 -10px;
+  border-bottom: 1px solid #D0D0D0;
+  padding: 50px 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.container > div {
+  margin: 0 10px;
+}
+
+.container .left {
+  flex-basis: 75%;
+}
+
+.container .right {
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  display: flex;
+  margin: 0 -10px;
+}
+.container .left .body .largeNewsCard {
+  margin: 0 10px;
+  width: 33.33%;
+  margin-bottom: 10px;
+}
+
+.container .left .body .smallNewsCards {
+  width: 66.67%;
+  margin: 0 10px;
+}
+
+.container .left .body .smallNewsCards > div{
+  margin: 0 -10px;
+}
+
+.right .link {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.right .createBusinessCard {
+  background: #021B9C;
+  color: #FFF;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.right .createBusinessCard p {
+  margin: 0;
+  text-align: center;
+}
+
+.right .createBusinessCard p:first-child {
+  font-size: 16px;
+}
+
+.right .createBusinessCard p:last-child {
+  font-size: 14px;
+}
+
+.right .createBusinessCard .title {
+  font-size: 28px;
+}
+
+@media(max-width: 899px) {
+  .hidden {
+    display: none!important;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+
+  .left {
+    max-width: 375px!important;
+    width: 100%!important;
+    margin: 0!important;
+  }
+
+  .left .body {
+    flex-direction: column;
+    width: 100%!important;
+    margin: 0!important ;
+    align-items: center;
+  }
+
+  .largeNewsCard {
+    max-width: 375px!important;
+    width: 100%!important;
+  }
+
+  .smallNewsCards {
+    width: 100%!important;
+    margin: 0!important;
+  }
+
+  .smallNewsCards .flex {
+    flex-direction: column;
+    width: 100%!important;
+    margin: 0!important;
+  }
+
+  .right {
+    max-width: 375px!important;
+    width: 100%!important;
+    margin: 0!important;
+  }
+}

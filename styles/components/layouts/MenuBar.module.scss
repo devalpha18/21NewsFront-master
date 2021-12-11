@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  
+  a {
+    font: {
+      size: 18px;
+      weight: 400;
+    }
+    margin: 0 15px;
+  }
+
+  a:hover {
+    color: #ddd;
+  }
+}
+
+@media(max-width: 1199px) {
+  .container {
+    display: flex;
+    align-items: center;
+
+    a {
+      font: {
+        size: 15px;
+        weight: 400;
+      }
+      margin: 0 10px;
+    }
+  }
+}

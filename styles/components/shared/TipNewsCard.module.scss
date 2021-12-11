@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+}
+
+.container .header {
+  height: 45px;
+  padding-left: 14px;
+  display: flex;
+  align-items: center;
+  background: #000000;
+  border-left: 5px solid #F80606;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.container .body {
+  padding: 0 12px;
+  border: 1px solid #EAEAEA;
+  border-radius: 3px;
+  background: #FFF;
+}

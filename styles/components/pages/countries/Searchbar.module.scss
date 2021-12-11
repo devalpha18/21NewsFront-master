@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  max-width: 939px;
+  height: 40px;
+  background: #FFF;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0 3px 6px #84828216;
+  position: relative;
+
+  input {
+    padding-left: 20px;
+    padding-right: 110px;
+    font-size: 16px;
+    color: #BABABA;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    position: absolute;
+    height: 100%;
+    background: none;
+    border: none;
+    top: 0;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+
+    img {
+      margin-left: 14px;
+    }
+  }
+} 

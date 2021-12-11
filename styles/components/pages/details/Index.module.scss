@@ -1,0 +1,230 @@
+.container {
+  padding-top: 120px;
+  background: #FAFAFA;
+
+  .header {
+    padding: 32px 0;
+    background: #F7F8FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > div {
+      width: 100%;
+      max-width: 1260px;
+      padding: 0 20px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      p, ul {
+        margin: 0;
+      }
+      
+      ul {
+        padding-left: 20px!important;
+        margin-right: 50px;
+      }
+
+      .countryName {
+        font-size: 36px;
+        line-height: 43px;
+        font-weight: 900;
+        margin-bottom: 10px;
+      }
+
+      .key {
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 700;
+        color: #021B9C;
+        margin-bottom: 8px;
+      }
+
+      .ulGroup {
+        display: flex;
+
+        li {
+          span {
+            font-size: 18px;
+            line-height: 28px;
+            color: #666666;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 44px 0;
+
+    .main {
+      width: 100%;
+      max-width: 1260px;
+      display: flex;
+
+      .left {
+        background: #FFF;
+        width: 300px;
+        flex-shrink: 0;
+        padding: 26px 22px 0;
+        margin-right: 20px;
+      }
+
+      .right {
+        .title {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 32px;
+          margin-bottom: 25px;
+        }
+
+        .text {
+          font-size: 18px;
+          line-height: 32px;
+          color: #666666;
+        }
+
+        .items {
+          display: flex;
+        }
+
+        .cloneLeftMenu {
+          display: flex;
+          justify-content: space-between;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 899px) {
+  .container {
+    padding-top: 112px!important;
+  }
+}
+
+@media(max-width: 834px) {
+  .container {
+    .header {
+      & > div {
+        .countryName {
+          margin-bottom: 12px!important;
+        }
+
+        .key {
+          font-size: 16px!important;
+          margin-bottom: 12px!important;
+        }
+
+        .ulGroup {
+          display: flex;
+
+          li {
+            span {
+              line-height: 24px!important;
+            }
+          }
+        }
+      }
+    }
+
+    .content {
+      padding: 18px 0!important;
+
+      .main {
+        .left {
+          display: none;
+        }
+
+        .right {
+          padding: 0 20px;
+          .title {
+            margin: 0;
+          }
+
+          .items {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .cloneLeftMenu {
+            flex-direction: column;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 700px) {
+  .container {
+    .header {
+      padding-top: 25px;
+      img {
+        width: 138px;
+      }
+
+      & > div {
+        .countryName {
+          font-size: 24px!important;
+          margin-bottom: 12px!important;
+        }
+
+        .key {
+          font-size: 15px!important;
+          margin-bottom: 12px!important;
+        }
+
+        .ulGroup {
+          display: flex;
+          flex-direction: column;
+
+          li {
+            span {
+              font-size: 15px!important;
+              line-height: 24px!important;
+            }
+          }
+        }
+      }
+    }
+
+    .content {
+      padding: 18px 0!important;
+
+      .main {
+        .left {
+          display: none;
+        }
+
+        .right {
+          padding: 0 20px;
+          .title {
+            font-size: 16px!important;
+            margin-bottom: 15px!important;
+            margin: 0;
+          }
+
+          .text {
+            font-size: 15px!important;
+            line-height: 24px!important;
+          }
+
+          .items {
+            display: flex;
+          }
+
+          .cloneLeftMenu {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}

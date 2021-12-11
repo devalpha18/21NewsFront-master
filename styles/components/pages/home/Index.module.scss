@@ -1,0 +1,21 @@
+.bodyContainer {
+  display: flex;
+  justify-content: center;
+  background: #FAFAFA;
+  padding: 170px 20px 82px;
+
+  .body {
+    width: 100%;
+    max-width: 1260px;
+  }
+}
+
+@media(max-width: 899px) {
+  .bodyContainer {
+    padding: 112px 20px 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
